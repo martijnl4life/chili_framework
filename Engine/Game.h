@@ -34,7 +34,7 @@ public:
 private:
 	void ComposeFrame();
 	void UpdateModel();
-	/********************************/
+	/********************************////////////////
 	/*  User Functions              */
 	/********************************/
 private:
