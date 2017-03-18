@@ -37,6 +37,8 @@ void Player::Draw(Graphics & gfx)
 	gfx.PutPixel(pos.x + 6, pos.y + 1, c_player);
 	gfx.PutPixel(pos.x - 6, pos.y - 1, c_player);
 	gfx.PutPixel(pos.x + 6, pos.y - 1, c_player);
+	gfx.PutPixel(pos.x - 7, pos.y, c_player);
+	gfx.PutPixel(pos.x + 7, pos.y, c_player);
 	//Neck
 	gfx.PutPixel(pos.x, pos.y - 1, c_player);
 	gfx.PutPixel(pos.x, pos.y - 2, c_player);
