@@ -44,13 +44,7 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {
-	int x = 400;
-	int y = 300;
-
-	if (wnd.kbd.KeyIsPressed(VK_RIGHT))
-	{
-		x = x + 100;
-	}
+	
 
 	if (wnd.kbd.KeyIsPressed(VK_LEFT))
 	{
@@ -113,5 +107,4 @@ void Game::ComposeFrame()
 		gfx.PutPixel(x + 3, y + 5, 255, gb, gb);
 
 	}
-	player.Draw(gfx);
 }
