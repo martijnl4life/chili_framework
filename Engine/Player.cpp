@@ -15,5 +15,70 @@ void Player::Update(Keyboard & kbd)
 
 void Player::Draw(Graphics & gfx)
 {
-	gfx.DrawCircle(pos.x, pos.y, radius, c_player);
+	//Center
+	gfx.PutPixel(pos.x, pos.y, c_player);
+	//Arms
+	gfx.PutPixel(pos.x + 1, pos.y, c_player);
+	gfx.PutPixel(pos.x + 2, pos.y, c_player);
+	gfx.PutPixel(pos.x + 3, pos.y, c_player);
+	gfx.PutPixel(pos.x + 4, pos.y, c_player);
+	gfx.PutPixel(pos.x + 5, pos.y, c_player);
+	gfx.PutPixel(pos.x - 1, pos.y, c_player);
+	gfx.PutPixel(pos.x - 2, pos.y, c_player);
+	gfx.PutPixel(pos.x - 3, pos.y, c_player);
+	gfx.PutPixel(pos.x - 4, pos.y, c_player);
+	gfx.PutPixel(pos.x - 5, pos.y, c_player);
+	//Hands
+	gfx.PutPixel(pos.x - 5, pos.y + 1, c_player);
+	gfx.PutPixel(pos.x + 5, pos.y + 1, c_player);
+	gfx.PutPixel(pos.x - 5, pos.y - 1, c_player);
+	gfx.PutPixel(pos.x + 5, pos.y - 1, c_player);
+	gfx.PutPixel(pos.x - 6, pos.y + 1, c_player);
+	gfx.PutPixel(pos.x + 6, pos.y + 1, c_player);
+	gfx.PutPixel(pos.x - 6, pos.y - 1, c_player);
+	gfx.PutPixel(pos.x + 6, pos.y - 1, c_player);
+	//Neck
+	gfx.PutPixel(pos.x, pos.y - 1, c_player);
+	gfx.PutPixel(pos.x, pos.y - 2, c_player);
+	gfx.PutPixel(pos.x, pos.y - 3, c_player);
+	gfx.PutPixel(pos.x, pos.y - 4, c_player);
+	gfx.PutPixel(pos.x, pos.y - 5, c_player);
+	//Head
+	gfx.PutPixel(pos.x, pos.y - 5, c_player);
+	gfx.PutPixel(pos.x + 1, pos.y - 5, c_player);
+	gfx.PutPixel(pos.x - 1, pos.y - 5, c_player);
+	gfx.PutPixel(pos.x + 2, pos.y - 5, c_player);
+	gfx.PutPixel(pos.x - 2, pos.y - 5, c_player);
+	gfx.PutPixel(pos.x, pos.y - 6, c_player);
+	gfx.PutPixel(pos.x + 1, pos.y - 6, c_player);
+	gfx.PutPixel(pos.x - 1, pos.y - 6, c_player);
+	gfx.PutPixel(pos.x + 2, pos.y - 6, c_player);
+	gfx.PutPixel(pos.x - 2, pos.y - 6, c_player);
+	gfx.PutPixel(pos.x, pos.y - 7, c_player);
+	gfx.PutPixel(pos.x + 1, pos.y - 7, c_player);
+	gfx.PutPixel(pos.x - 1, pos.y - 7, c_player);
+	gfx.PutPixel(pos.x + 2, pos.y - 7, c_player);
+	gfx.PutPixel(pos.x - 2, pos.y - 7, c_player);
+	gfx.PutPixel(pos.x, pos.y - 8, c_player);
+	gfx.PutPixel(pos.x + 1, pos.y - 8, c_player);
+	gfx.PutPixel(pos.x - 1, pos.y - 8, c_player);
+	gfx.PutPixel(pos.x + 2, pos.y - 8, c_player);
+	gfx.PutPixel(pos.x - 2, pos.y - 8, c_player);
+	//Bodpos.y
+	gfx.PutPixel(pos.x, pos.y + 1, c_player);
+	gfx.PutPixel(pos.x, pos.y + 2, c_player);
+	gfx.PutPixel(pos.x, pos.y + 3, c_player);
+	gfx.PutPixel(pos.x, pos.y + 4, c_player);
+	gfx.PutPixel(pos.x, pos.y + 5, c_player);
+	gfx.PutPixel(pos.x, pos.y + 6, c_player);
+	gfx.PutPixel(pos.x, pos.y + 7, c_player);
+	//Legs
+	gfx.PutPixel(pos.x + 1, pos.y + 8, c_player);
+	gfx.PutPixel(pos.x - 1, pos.y + 8, c_player);
+	gfx.PutPixel(pos.x + 2, pos.y + 9, c_player);
+	gfx.PutPixel(pos.x - 2, pos.y + 9, c_player);
+	gfx.PutPixel(pos.x + 2, pos.y + 10, c_player);
+	gfx.PutPixel(pos.x - 2, pos.y + 10, c_player);
+	gfx.PutPixel(pos.x + 3, pos.y + 11, c_player);
+	gfx.PutPixel(pos.x - 3, pos.y + 11, c_player);
 }

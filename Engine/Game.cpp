@@ -25,7 +25,7 @@ Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
 	gfx( wnd ),
-	player(Vec2{200,200})
+	player(Vec2{400,300})
 {
 }
 
@@ -45,78 +45,4 @@ void Game::UpdateModel()
 void Game::ComposeFrame()
 {
 	player.Draw(gfx);
-
-	int x = 400;
-	int y = 300;
-	int r = 255;
-	int g = 255;
-	int b = 255;
-
-	//Center
-	gfx.PutPixel(x, y, r, g, b);
-	//Arms
-	gfx.PutPixel(x + 1, y, r, g, b);
-	gfx.PutPixel(x + 2, y, r, g, b);
-	gfx.PutPixel(x + 3, y, r, g, b);
-	gfx.PutPixel(x + 4, y, r, g, b);
-	gfx.PutPixel(x + 5, y, r, g, b);
-	gfx.PutPixel(x - 1, y, r, g, b);
-	gfx.PutPixel(x - 2, y, r, g, b);
-	gfx.PutPixel(x - 3, y, r, g, b);
-	gfx.PutPixel(x - 4, y, r, g, b);
-	gfx.PutPixel(x - 5, y, r, g, b);
-	//Hands
-	gfx.PutPixel(x - 5, y + 1, r, g, b);
-	gfx.PutPixel(x + 5, y + 1, r, g, b);
-	gfx.PutPixel(x - 5, y - 1, r, g, b);
-	gfx.PutPixel(x + 5, y - 1, r, g, b);
-	gfx.PutPixel(x - 6, y + 1, r, g, b);
-	gfx.PutPixel(x + 6, y + 1, r, g, b);
-	gfx.PutPixel(x - 6, y - 1, r, g, b);
-	gfx.PutPixel(x + 6, y - 1, r, g, b);
-	//Neck
-	gfx.PutPixel(x, y - 1, r, g, b);
-	gfx.PutPixel(x, y - 2, r, g, b);
-	gfx.PutPixel(x, y - 3, r, g, b);
-	gfx.PutPixel(x, y - 4, r, g, b);
-	gfx.PutPixel(x, y - 5, r, g, b);
-	//Head
-	gfx.PutPixel(x, y - 5, r, g, b);
-	gfx.PutPixel(x + 1, y - 5, r, g, b);
-	gfx.PutPixel(x - 1, y - 5, r, g, b);
-	gfx.PutPixel(x + 2, y - 5, r, g, b);
-	gfx.PutPixel(x - 2, y - 5, r, g, b);
-	gfx.PutPixel(x, y - 6, r, g, b);
-	gfx.PutPixel(x + 1, y - 6, r, g, b);
-	gfx.PutPixel(x - 1, y - 6, r, g, b);
-	gfx.PutPixel(x + 2, y - 6, r, g, b);
-	gfx.PutPixel(x - 2, y - 6, r, g, b);
-	gfx.PutPixel(x, y - 7, r, g, b);
-	gfx.PutPixel(x + 1, y - 7, r, g, b);
-	gfx.PutPixel(x - 1, y - 7, r, g, b);
-	gfx.PutPixel(x + 2, y - 7, r, g, b);
-	gfx.PutPixel(x - 2, y - 7, r, g, b);
-	gfx.PutPixel(x, y - 8, r, g, b);
-	gfx.PutPixel(x + 1, y - 8, r, g, b);
-	gfx.PutPixel(x - 1, y - 8, r, g, b);
-	gfx.PutPixel(x + 2, y - 8, r, g, b);
-	gfx.PutPixel(x - 2, y - 8, r, g, b);
-	//Body
-	gfx.PutPixel(x, y + 1, r, g, b);
-	gfx.PutPixel(x, y + 2, r, g, b);
-	gfx.PutPixel(x, y + 3, r, g, b);
-	gfx.PutPixel(x, y + 4, r, g, b);
-	gfx.PutPixel(x, y + 5, r, g, b);
-	gfx.PutPixel(x, y + 6, r, g, b);
-	gfx.PutPixel(x, y + 7, r, g, b);
-	//Legs
-	gfx.PutPixel(x + 1, y + 8, r, g, b);
-	gfx.PutPixel(x - 1, y + 8, r, g, b);
-	gfx.PutPixel(x + 2, y + 9, r, g, b);
-	gfx.PutPixel(x - 2, y + 9, r, g, b);
-	gfx.PutPixel(x + 2, y + 10, r, g, b);
-	gfx.PutPixel(x - 2, y + 10, r, g, b);
-	gfx.PutPixel(x + 3, y + 11, r, g, b);
-	gfx.PutPixel(x - 3, y + 11, r, g, b);
-
 }
