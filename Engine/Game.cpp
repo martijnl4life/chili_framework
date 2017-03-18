@@ -24,7 +24,8 @@
 Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
-	gfx( wnd )
+	gfx( wnd ),
+	player(Vec2{200,200})
 {
 }
 
@@ -38,6 +39,7 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+	player.Update(wnd.kbd);
 }
 
 void Game::ComposeFrame()
@@ -111,4 +113,5 @@ void Game::ComposeFrame()
 		gfx.PutPixel(x + 3, y + 5, 255, gb, gb);
 
 	}
+	player.Draw(gfx);
 }
