@@ -17,7 +17,7 @@ private:
 	static constexpr int radius = 7;
 	static constexpr int width = 14;
 	static constexpr int height = 21;
-	static constexpr Color c_enemy0 = Colors::Red;
+	static constexpr Color c_enemy0 = Colors::Green;
 	static constexpr Color c_enemy1 = Colors::Red;
 	static constexpr Color c_enemy2 = Colors::Red;
 };

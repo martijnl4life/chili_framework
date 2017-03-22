@@ -26,7 +26,7 @@ Game::Game( MainWindow& wnd )
 	wnd( wnd ),
 	gfx( wnd ),
 	player(Vec2{400,300}),
-	ms()
+	enemy(Vec2{200,200})
 {
 }
 

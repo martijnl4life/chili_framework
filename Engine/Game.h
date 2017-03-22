@@ -25,6 +25,7 @@
 #include "Graphics.h"
 #include "Vec2.h"
 #include "Player.h"
+#include "Enemy.h"
 #include "MainScreen.h"
 
 class Game
@@ -52,4 +53,5 @@ private:
 	MainScreen ms;
 	Player player;
 	State Gamestate = State::MainScreen; // default gamestate
+	Enemy enemy;
 };
