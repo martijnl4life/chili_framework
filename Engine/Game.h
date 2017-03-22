@@ -25,6 +25,7 @@
 #include "Graphics.h"
 #include "Vec2.h"
 #include "Player.h"
+#include "Enemy.h"
 
 class Game
 {
@@ -40,4 +41,5 @@ private:
 	MainWindow& wnd;
 	Graphics gfx;
 	Player player;
+	Enemy enemy;
 };

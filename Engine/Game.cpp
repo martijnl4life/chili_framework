@@ -25,7 +25,8 @@ Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
 	gfx( wnd ),
-	player(Vec2{400,300})
+	player(Vec2{400,300}),
+	enemy(Vec2{200,200})
 {
 }
 
@@ -45,4 +46,5 @@ void Game::UpdateModel()
 void Game::ComposeFrame()
 {
 	player.Draw(gfx);
+	enemy.Draw(gfx);
 }

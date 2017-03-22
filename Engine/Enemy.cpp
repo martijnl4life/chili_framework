@@ -15,6 +15,9 @@ void Enemy::Update()
 void Enemy::Draw(Graphics & gfx)
 {
 	// TODO draw an enemy
+
+
+
 }
 
 Rect Enemy::GetRect()
