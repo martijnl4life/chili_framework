@@ -25,7 +25,8 @@ Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
 	gfx( wnd ),
-	player(Vec2{400,300})
+	player(Vec2{400,300}),
+	ms()
 {
 }
 
@@ -39,10 +40,66 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-	player.Update(wnd.kbd);
+	switch (Gamestate)
+	{
+		case State::MainScreen:
+		{
+			ms.UpdateScreen(wnd.mouse);
+			if (ms.GetPressedPlay())
+			{
+				Gamestate = State::Playing;
+			}
+			else if (ms.GetPressedTest())
+			{
+				Gamestate = State::Test;
+			}
+			break;
+		}
+		case State::Playing:
+		{
+			player.Update(wnd.kbd);
+			break;
+		}
+		case State::Test:
+		{
+			break;
+		}
+		case State::Win:
+		{
+			break;
+		}
+		case State::Lose:
+		{
+			break;
+		}
+	}
 }
 
 void Game::ComposeFrame()
 {
-	player.Draw(gfx);
+	switch (Gamestate)
+	{
+		case State::MainScreen:
+		{
+			ms.DrawScreen(gfx);
+			break;
+		}
+		case State::Playing:
+		{
+			player.Draw(gfx);
+			break;
+		}
+		case State::Test:
+		{
+			break;
+		}
+		case State::Win:
+		{
+			break;
+		}
+		case State::Lose:
+		{
+			break;
+		}
+	}
 }
