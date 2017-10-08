@@ -16,7 +16,7 @@ void Enemy::Draw(Graphics & gfx)
 {
 	// TODO draw an enemy
 
-
+	gfx.PutPixel(200, 100, c_enemy0);
 
 }
 
