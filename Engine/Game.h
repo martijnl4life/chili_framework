@@ -26,6 +26,7 @@
 #include "Vec2.h"
 #include "Player.h"
 #include "Enemy.h"
+#include "MainScreen.h"
 
 class Game
 {
@@ -34,12 +35,23 @@ public:
 	Game( const Game& ) = delete;
 	Game& operator=( const Game& ) = delete;
 	void Go();
+public:
+	enum class State
+	{
+		MainScreen,
+		Playing,
+		Test,
+		Lose,
+		Win
+	};
 private:
 	void ComposeFrame();
 	void UpdateModel();
 private:
 	MainWindow& wnd;
 	Graphics gfx;
+	MainScreen ms;
 	Player player;
+	State Gamestate = State::MainScreen; // default gamestate
 	Enemy enemy;
 };

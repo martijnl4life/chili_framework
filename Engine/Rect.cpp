@@ -22,6 +22,16 @@ bool Rect::IsColliding(Rect & rect2)
 	return left0 < right1 && right0 > left1 && top0 < bottom1 && bottom0 > top1;
 }
 
+bool Rect::IsColliding(Vec2 & _pos)
+{
+	const int left = int(pos.x);
+	const int right = int(pos.x + width);
+	const int top = int(pos.y);
+	const int bottom = int(pos.y + height);
+
+	return left < _pos.x && right > _pos.x && top < _pos.y && bottom > _pos.y;
+}
+
 Vec2 Rect::GetPos()
 {
 	return pos;

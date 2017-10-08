@@ -7,6 +7,7 @@ public:
 	Rect() = default;
 	Rect(Vec2& in_pos, int in_width, int in_height);
 	bool IsColliding(Rect& rect2);
+	bool IsColliding(Vec2& pos);
 	Vec2 GetPos();
 	int GetWidth();
 	int GetHeight();
